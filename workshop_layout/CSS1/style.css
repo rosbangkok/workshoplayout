@@ -1,0 +1,147 @@
+*{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    font-family:Kanit;
+}
+
+nav{
+    height: 70px;
+    background-color: teal;
+}
+
+nav label{
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 70px;
+    line-height: 70px;  
+    color: mintcream;
+
+}
+
+nav ul{
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    color: mintcream;
+    display:block;
+    padding: 0 15px;
+    font-size: 20px;
+    background-color: teal;
+    line-height: 70px;
+}
+
+/* Hover เมนู */
+nav ul li a:hover{
+    color: lightgreen;
+}
+
+/*เมื่อมีการวางเม้าส์บน li เมนูหลักให้ไปเรียกแสดงผลเมนูย่อย*/
+nav ul li:hover>ul{
+visibility: visible;
+opacity: 1;
+transition: 0.5s linear;
+}
+/* เมนูย่อยชั้นที่ 1 */
+nav ul ul{
+position: absolute;
+top: 70px;
+border-top: 3px solid grey;
+/*display: none; /*ซ่อนเมนูย่อย*/
+opacity:0;
+visibility: hidden;
+z-index: 5; /*ค่าlayerชุดคำสั่ง*/
+}
+
+nav ul ul li{
+    width: 150px;
+    position: relative;
+    display: list-item;
+
+}
+
+nav ul ul li a{
+    line-height: 50px;
+}
+
+/*เมนูชั้นที่ 2*/
+nav ul ul ul{
+    border-top:none;
+}
+nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+
+/*จัดตำแหน่ง icon ให้อยู่ด้านขวาของกล่อง*/
+nav ul ul li a i{
+    margin-left: 45px;
+}
+
+/*เขียนตกแต่งของ SlideShow*/
+div.slideshow {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+div.slideshow i{
+    position: absolute;
+    bottom:30px;
+    left:50%;
+    font-size: 40px;
+    color: mintcream;
+}
+
+/*แก้ไขขอบภาพสไลด์*/
+.flexslider{
+    border: 0px;
+}
+
+/*เขียนตกแต่งGallery*/
+h1{
+    font-size: 36px;
+    margin-left: 70px;
+    padding-left: 70px;
+    text-align-last: center;
+}
+div.gallery{
+    margin-top: 40px;
+    overflow: hidden; /*ครอบเนื้อหาทั้งหมดไว้ ไม่ให้เนื้อหาอื่นๆมาซ้อนทับ*/
+}
+
+div.row{
+    overflow: hidden; /*ครอบเนื้อหาทั้งหมดไว้ ไม่ให้เนื้อหาอื่นๆมาซ้อนทับ*/
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+div.col{
+    float: left;
+    width:23%;
+    margin:10px;
+}
+
+div.col img{
+    width: 100%;
+}
+/*ตกแต่งFooter*/
+footer{
+    background: grey;
+    color:wheat;
+    padding:40px;
+text-align:center;
+font-size: 20px;
+}

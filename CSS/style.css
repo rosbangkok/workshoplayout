@@ -1,0 +1,89 @@
+body{
+    background-color: coral;/*สีพื้นหลังหน้าเว็บ*/
+    background: url(/images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: indianred; /*สีตัวอักษร*/
+   font-family: 'Kanit';
+    margin: 0px;
+}
+
+/*ปรับแต่งโลโก้*/
+.logo {
+    text-align: center;
+}
+
+.logo img{
+    width:120px;
+}
+
+/*การตกแต่งเมนู*/
+ul{
+    list-style-type: none; /*การซ่อนBullet หน้าเมนู*/
+    padding:20px;
+    text-align: center;
+    background-color: gray;
+}
+
+    li{
+        display:inline; /*เรียงเมนูให้อยู่บรรทัดเดียวกัน*/
+        margin: 20px; /*ช่องว่างระหว่างเมนู*/
+    }
+    a:link,a:visited {
+        color: darkred;
+        font-size: 24px;
+        text-decoration:none; /*ซ่อนเส้นใต้ลิงค์*/
+    }
+
+    a:hover{
+        color: whitesmoke;
+        border-bottom-width: 6px;
+        border-bottom-color: whitesmoke;
+        border-bottom-style: solid;
+    }
+
+    /*ตกแต่ง Slideรูป*/
+    div.slide{
+        height: 500px;
+        background:url(/images/aroma.jpg);
+        background-size:cover;
+        background-position: center;
+        margin-bottom: 60px;
+    }
+
+    div.slide h1{
+        font-size:60px;
+        width: 300px;
+        background-color: wheat;
+        padding: 40px;
+        position: relative;
+        top:150px;
+    }
+
+    /*ตกแต่งContent*/
+    .content{
+        width:1200px;
+        margin-left:auto;
+        margin-right:auto;
+        /*background-color: yellowgreen;*/
+    }
+div.content .box{
+    width:28%;
+    display: inline-block;
+    padding: 20px;
+    text-align:center;
+
+}
+
+div.content .box .fas{
+    color: teal;
+}
+
+/*ตกแต่งFooter*/
+footer{
+    background: grey;
+    color:wheat;
+    padding:40px;
+text-align:center;
+font-size: 20px;
+}

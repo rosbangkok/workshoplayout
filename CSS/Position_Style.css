@@ -1,0 +1,46 @@
+h1{
+    font-size: 60px;
+}
+
+p{
+    font-size: 30px;
+}
+
+/*การเขียน position fixed*/
+div.banner img{
+    width: 150px;
+}
+
+div.banner{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: maroon;
+    padding: 20px;
+}
+
+/*การเขียน position Relative*/
+div.product img.cover{
+    width: 500px;
+}
+
+div.product{
+    width:500px;
+    position: relative; /*อ้างอิงตำแหน่งจากเว็บ browser*/
+}
+/**การเขียน position absoulte**/
+div.product p{
+    position: absolute;
+    bottom: 170px;
+    right: 130px;
+    background-color: mintcream;
+
+}
+
+div.product img.logo{
+    width:80px;
+    position: absolute;
+    bottom:20px;
+    right:20px;
+
+}
